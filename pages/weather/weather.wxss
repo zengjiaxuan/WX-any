@@ -1,0 +1,21 @@
+page{
+    background: #f8f8f8;
+}
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300rpx;
+    margin: 20rpx 37px;
+    /* background: #ccc; */
+    box-sizing: border-box;
+    border-radius: 10%;
+    box-shadow: 0px 0px 30px rgba(0,0,0,.3);
+}
+.weather-image image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-left: 10rpx;
+
+}

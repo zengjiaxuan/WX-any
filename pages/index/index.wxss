@@ -1,0 +1,93 @@
+.search {
+  font-size: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.search icon {
+  margin: auto 0 auto 20rpx;
+}
+
+.search input {
+  width: 100%;
+  margin-left: 20rpx;
+  border: none;
+}
+.search view{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.search image {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 25rpx 40rpx;
+}
+
+.placeholder {
+  font-size: 14px;
+  color: #d1d1d1;
+  margin-left: 20rpx;
+}
+
+.navbar {
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rpx 74rpx;
+  background: #1caf8b;
+  color: white;
+  font-size: 16px;
+  line-height: 80rpx;
+}
+
+.navbar text.active {
+  color: skyblue;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc;
+}
+
+.content image {
+  width: 335rpx;
+  height: 308rpx;
+}
+
+.content .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10rpx 0rpx 0rpx 10rpx;
+  color: #1caf8b;
+  font-size: 16px;
+}
+
+.info .movieId {
+  width: 430rpx;
+  font-size: 20px;
+}
+
+.info text {
+  margin-bottom: 10rpx;
+}
+
+.info .score {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 50rpx;
+  background: #1caf8b;
+  color: white;
+  border-radius: 30%;
+  font-size: 15px;
+  text-align: center;
+}

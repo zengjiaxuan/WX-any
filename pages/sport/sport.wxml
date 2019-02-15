@@ -1,0 +1,33 @@
+
+<button disabled>耗时：{{time}}</button>
+<button disabled>里程数: {{meters}}m</button>
+<button bindtap="reset">重置所有</button>
+<button bindtap="start">开始运动</button>
+<button bindtap = "stop">暂停运动</button>
+
+
+<map 
+  id="map"
+  scale="18"
+  latitude="{{latitude}}"
+  longitude="{{longitude}}"
+  polyline="{{polyline}}"
+  show-location
+>
+  <cover-view>
+    经度: {{latitude}}
+  </cover-view>
+  <cover-view>
+    纬度: {{longitude}}
+  </cover-view>
+  <cover-view>
+    速度: {{speed}}m/s
+  </cover-view>
+  <cover-view>
+    精确度: {{accuracy}}
+  </cover-view>
+  <cover-image src="/images/icon/tocenter.png" bindtap="goCenter">
+  
+  </cover-image>
+</map>
+

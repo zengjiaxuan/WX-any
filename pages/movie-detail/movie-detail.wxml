@@ -1,0 +1,56 @@
+<view class="container">
+    <image class="head-img" src="{{movie.images.large}}" mode="aspectFill"></image>
+    <view class="head-info" data-src="{{movie.images.large}}" catchtap="viewMoviePostImg">
+        <text class="title">{{movie.title}}</text>
+        <text class="areaTime">{{movie.countries[0]+'·'+movie.year}}</text>
+        <view class="info">
+            <text class="red">{{movie.collect_count}}</text>
+            <text class="text">人喜欢</text>
+            <text class="red">{{movie.comments_count}}</text>
+            <text class="text">条评论</text>
+        </view>
+    </view>
+    <image class="image" src="{{movie.images.large}}" data-src="{{movie.images.large}}" catchtap="viewMoviePostImg"></image>
+    <view class="summary">
+        <view class="original-title">
+            <text>{{originalTitle}}</text>
+        </view>
+        <view class="headline">
+            <text class="mark">评分</text>
+            <view class="star">
+                <view class="star-hide">★★★★★</view>
+                <view class="star-show" style="width: {{percentage}}%;">★★★★★</view>
+            </view>
+            <text>{{movie.rating.average}}</text>
+        </view>
+        <view class="headline">
+            <text class="mark">导演</text>
+            <text>{{movie.directors[0].name}}</text>
+        </view>
+        <view class="headline">
+            <text class="mark">演员</text>
+            <text>{{casts}}</text>
+        </view>
+        <view class="headline">
+            <text class="mark">类型</text>
+            <text>{{genres}}</text>
+        </view>
+    </view>
+    <view class="hr"></view>
+    <view class="synopsis">
+        <text>剧情简介</text>
+        <text class="synopsis-content">{{movie.summary}}</text>
+    </view>
+    <view class="hr"></view>
+    <view class="cast">
+        <text class="cast-title">演员表</text>
+        <scroll-view  class="cast-main" scroll-x="true" >
+            <block wx:for="{{castsInfo}}" wx:key="id">
+                <view class="cast-container">
+                    <image class="cast-img" src="{{item.img}}" ></image>
+                    <view class="cast-name">{{item.name}}</view>
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+</view>

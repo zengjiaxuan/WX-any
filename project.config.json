@@ -1,0 +1,82 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.0",
+	"appid": "wx30dd0c913ae4d325",
+	"projectname": "wx-douban",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "单页调试 详情页",
+					"pathName": "pages/movie-detail/movie-detail",
+					"query": "movieId=26942674"
+				},
+				{
+					"id": 1,
+					"name": "单页调试  天气",
+					"pathName": "pages/weather/weather",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "单页调试 测试",
+					"pathName": "pages/sport/sport",
+					"query": "movieId= 26942674"
+				},
+				{
+					"id": 3,
+					"name": "单页调试  新闻",
+					"pathName": "pages/news/news",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "单页调试地图",
+					"pathName": "pages/map/map",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "单页调试a",
+					"pathName": "pages/a/a",
+					"query": ""
+				}
+			]
+		}
+	}
+}

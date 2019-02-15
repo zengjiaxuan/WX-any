@@ -1,0 +1,25 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+#map{
+ width: 100%;
+ height: 100%;
+}
+cover-view{
+  font-weight: 500;
+  margin-top: 5rpx;
+  margin-left: 5rpx;
+  font-size: 12px;
+}
+cover-image{
+  position: absolute;
+  right: 40rpx;
+  top: 600rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+button{
+  height: 60rpx;
+  line-height: 60rpx;
+}

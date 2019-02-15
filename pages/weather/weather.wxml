@@ -1,0 +1,13 @@
+<view>
+    <text>{{weatherData}}</text>
+</view>
+<view wx:for="{{weatherData_future}}" wx:key="id" class="weather-container">
+    <text class="weather-date">{{item.date}}</text>
+    <view class="weather-image">
+        <image  src="{{item.dayPictureUrl}}"></image>
+        <image src="{{item.nightPictureUrl}}"></image>
+    </view>
+    <text class="weather-temperature">{{item.temperature}}</text>
+    <text class="weather-weather">{{item.weather}}</text>
+    <text class="weather-wind">{{item.wind}}</text>
+</view>

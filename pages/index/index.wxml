@@ -1,0 +1,36 @@
+<view>
+    <view class="search">
+        <icon type="search" class="search-img" size="13" color="#405f80" bindtap="getloacl"></icon>
+        <input type="text" placeholder="请输入搜索内容(电影全名)" placeholder-class="placeholder" bindfocus="onBindFocus" bindblur="onBindBlur" bindinput="searchName" value="{{searchName}}"></input>
+        <view wx:if="{{searchShow}}" bindtap="searchClose"><image src="../../images/icon/xx.png"></image></view>
+    </view>
+    <view wx:if="{{searchShow}}">
+        <navigator class="content" wx:for="{{searchList}}" wx:key="id" url="../movie-detail/movie-detail?movieId={{item.id}}">
+            <image src="{{item.images.medium}}"></image>
+            <view class="info">
+                <text class="movieId">{{item.title}}</text>
+                <text>类型：{{item.genres}}</text>
+                <text>导演：{{item.directors[0].name}}</text>
+                <text>演员：{{item.casts[0].name}}、{{item.casts[1].name}}、{{item.casts[2].name}}</text>
+                <text class="score">{{item.rating.average}}</text>
+            </view>
+        </navigator>
+    </view>
+    <view wx:if="{{searchHide}}">
+        <view class="navbar">
+            <text data-id="1" class="{{dataId=='1'?'active':''}}" bindtap="check" id="in_theaters">正在热映</text>
+            <text data-id="2" class="{{dataId=='2'?'active':''}}" bindtap="check" id="coming_soon">即将上映</text>
+            <text data-id="3" class="{{dataId=='3'?'active':''}}" bindtap="check" id="top250">top250</text>
+        </view>
+        <navigator class="content" wx:for="{{theatersList}}" wx:key="id" url="../movie-detail/movie-detail?movieId={{item.id}}">
+            <image src="{{item.images.medium}}"></image>
+            <view class="info">
+                <text class="movieId">{{item.title}}</text>
+                <text>类型：{{item.genres}}</text>
+                <text>导演：{{item.directors[0].name}}</text>
+                <text>演员：{{item.casts[0].name}}、{{item.casts[1].name}}、                 {{item.casts[2].name}}</text>
+                <text class="score">{{item.rating.average}}</text>
+            </view>
+        </navigator>
+    </view>
+</view>
